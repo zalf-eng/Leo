@@ -1,5 +1,5 @@
 {
- "aturan": "Sebelum membuat video, cocokkan link baru dengan daftar ini (resolve link pendek ke shop_id/item_id lewat repliz_link_metadata). Jika produk sudah ada, beri tahu Soom dulu dan jangan buat ulang tanpa perintahnya.",
+ "aturan": "Link yang sama boleh dipakai lagi asalkan gambar/barang yang dijual berbeda (misalnya beda warna atau ukuran). Beri tahu Soom hanya jika link DAN gambar/barangnya sama dengan produk yang sudah diupload. Cocokkan link lewat shop_id/item_id (repliz_link_metadata) dan bandingkan fotonya.",
  "produk": [
   {
    "nama": "Slingbag Nylon Crinkle Hayden",
