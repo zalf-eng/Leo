@@ -1,9 +1,45 @@
 {
-  "aturan": "Sebelum membuat video, cocokkan link baru dengan daftar ini (resolve link pendek ke shop_id/item_id lewat repliz_link_metadata). Jika produk sudah ada, beri tahu Soom dulu dan jangan buat ulang tanpa perintahnya.",
-  "produk": [
-    {"nama": "Slingbag Nylon Crinkle Hayden", "link": "https://s.shopee.co.id/1W0Ee6Pw8I", "shop_id": "210499562", "item_id": "26304730809", "video": "videos/hayden_youtube.mp4", "diposting": "2026-10-25 (TikTok + YouTube)"},
-    {"nama": "Kaos Oversized FORMLOCK", "link": "https://s.shopee.co.id/40hZp9M6lE", "shop_id": "462123491", "item_id": "24688902803", "video": "videos/formlock.mp4", "diposting": "2026-10-25 22:10 WITA (TikTok + YouTube)"},
-    {"nama": "Celana Panjang Pria Pinggang Karet", "link": "https://s.shopee.co.id/1LgoeydaQZ", "shop_id": "772697554", "item_id": "25424656814", "video": "videos/celana.mp4", "diposting": "2026-10-25 22:40 WITA (TikTok + YouTube)"},
-    {"nama": "Celana Kulot Wanita Loose Pants 332", "link": "https://s.shopee.co.id/1LgofBqD1Z", "shop_id": "270792557", "item_id": "10299721636", "video": "videos/kulot.mp4", "diposting": "dijadwalkan 2026-10-26 19:00 WITA (TikTok + YouTube)"}
-  ]
+ "aturan": "Sebelum membuat video, cocokkan link baru dengan daftar ini (resolve link pendek ke shop_id/item_id lewat repliz_link_metadata). Jika produk sudah ada, beri tahu Soom dulu dan jangan buat ulang tanpa perintahnya.",
+ "produk": [
+  {
+   "nama": "Slingbag Nylon Crinkle Hayden",
+   "link": "https://s.shopee.co.id/1W0Ee6Pw8I",
+   "shop_id": "210499562",
+   "item_id": "26304730809",
+   "video": "videos/hayden_youtube.mp4",
+   "diposting": "2026-10-25 (TikTok + YouTube)"
+  },
+  {
+   "nama": "Kaos Oversized FORMLOCK",
+   "link": "https://s.shopee.co.id/40hZp9M6lE",
+   "shop_id": "462123491",
+   "item_id": "24688902803",
+   "video": "videos/formlock.mp4",
+   "diposting": "2026-10-25 22:10 WITA (TikTok + YouTube)"
+  },
+  {
+   "nama": "Celana Panjang Pria Pinggang Karet",
+   "link": "https://s.shopee.co.id/1LgoeydaQZ",
+   "shop_id": "772697554",
+   "item_id": "25424656814",
+   "video": "videos/celana.mp4",
+   "diposting": "2026-10-25 22:40 WITA (TikTok + YouTube)"
+  },
+  {
+   "nama": "Celana Kulot Wanita Loose Pants 332",
+   "link": "https://s.shopee.co.id/1LgofBqD1Z",
+   "shop_id": "270792557",
+   "item_id": "10299721636",
+   "video": "videos/kulot.mp4",
+   "diposting": "dijadwalkan 2026-10-26 19:00 WITA (TikTok + YouTube)"
+  },
+  {
+   "nama": "Kaos FORMLOCK Regular T-Shirt",
+   "link": "https://s.shopee.co.id/2gCCNq3yCV",
+   "shop_id": "462123491",
+   "item_id": "45115156487",
+   "video": "videos/regular.mp4",
+   "diposting": "dijadwalkan 2026-10-26 12:00 WITA (TikTok + YouTube)"
+  }
+ ]
 }
