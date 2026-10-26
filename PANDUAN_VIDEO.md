@@ -25,3 +25,9 @@ Aturan dari Soom: **sebelum membuat video baru, riset dulu musik dan gaya editan
 - https://pixelpanda.ai/blog/2026/03/30/tiktok-shop-product-videos-2026/
 - https://www.industry.co.id/read/155846/konten-tiktok-affiliate-tanpa-wajah-2026-strategi-cuan-dari-kamera-belakang
 - https://creativedisc.com/2026/08/10-lagu-yang-viral-di-tiktok-sepanjang-2026-dari-die-on-this-hill-hingga-mmg-my-mine-gue/
+
+## Template yang dipakai sejak 26 Okt 2026 (tools/render3.py)
+- Total ±8,5 detik, 112 BPM, ganti adegan setiap 3 ketukan (±1,6 detik), CTA 4 ketukan.
+- Adegan 1 berisi hook berupa pertanyaan masalah, teks kuning besar dengan efek getar ringan.
+- Setiap potongan diberi punch-in zoom dan flash putih tipis. Teks berada di bagian atas, foto produk di atas latar blur penuh layar.
+- Hasil awal (25 Okt, template lama 15 detik): ±200 tontonan, tapi rata-rata hanya ditonton 1,5–2,5 detik. Evaluasi template baru setelah tayang.
