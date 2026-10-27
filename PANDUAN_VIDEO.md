@@ -31,3 +31,8 @@ Aturan dari Soom: **sebelum membuat video baru, riset dulu musik dan gaya editan
 - Adegan 1 berisi hook berupa pertanyaan masalah, teks kuning besar dengan efek getar ringan.
 - Setiap potongan diberi punch-in zoom dan flash putih tipis. Teks berada di bagian atas, foto produk di atas latar blur penuh layar.
 - Hasil awal (25 Okt, template lama 15 detik): ±200 tontonan, tapi rata-rata hanya ditonton 1,5–2,5 detik. Evaluasi template baru setelah tayang.
+
+## Aturan musik (28 Okt 2026)
+- **Jangan pakai lagi musik buatan sendiri (beat.py/beat2.py).** Soom menilai musiknya berulang, tidak bagus, dan mengganggu.
+- TikTok: render video **tanpa musik**, kirim sebagai **draf** (isDraft), lalu Soom memilih lagu dari pustaka TikTok di aplikasi.
+- Kalau daftar musik trending Repliz sudah terisi, pasang ID lagu TikTok lewat additionalInfo.music.
