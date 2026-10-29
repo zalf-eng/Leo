@@ -34,5 +34,11 @@ Aturan dari Soom: **sebelum membuat video baru, riset dulu musik dan gaya editan
 
 ## Aturan musik (28 Okt 2026)
 - **Jangan pakai lagi musik buatan sendiri (beat.py/beat2.py).** Soom menilai musiknya berulang, tidak bagus, dan mengganggu.
-- TikTok: render video **tanpa musik**, kirim sebagai **draf** (isDraft), lalu Soom memilih lagu dari pustaka TikTok di aplikasi.
+- **TikTok dan YouTube**: render video **tanpa musik**, kirim sebagai **draf** (TikTok: isDraft, masuk Kotak Masuk; YouTube: privat), lalu Soom menambahkan lagu sendiri di aplikasi. Mode draf TikTok terbukti berhasil 28 Okt (postId INBOX_TIKTOK).
 - Kalau daftar musik trending Repliz sudah terisi, pasang ID lagu TikTok lewat additionalInfo.music.
+
+## Ide format foto-slideshow fashion (riset 29 Okt 2026)
+- Daftar bernomor ("3 gaya pakai 1 celana"), satu foto per gaya, 1,5–2 detik per slide.
+- Fit check: tinggi dan ukuran di teks, supaya pembeli bisa menilai ukurannya.
+- Satu celana dipadu atasan berbeda untuk momen berbeda (kerja, jalan, malam).
+- Sumber: https://ecomdymedia.com/blog/5-high-converting-tiktok-creative-ideas-for-fashion-brands-in-2026
