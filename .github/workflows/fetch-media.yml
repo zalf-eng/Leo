@@ -1,0 +1,26 @@
+name: fetch-media
+on:
+  push:
+    paths: ['media/fetch.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download files listed in media/fetch.txt
+        run: |
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSfL -o "media/$name" "$url"
+          done < media/fetch.txt
+          ls -la media
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add media
+          git commit -m "Fetch media files" || echo nothing
+          git push
