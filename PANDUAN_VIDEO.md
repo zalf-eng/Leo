@@ -42,3 +42,21 @@ Aturan dari Soom: **sebelum membuat video baru, riset dulu musik dan gaya editan
 - Fit check: tinggi dan ukuran di teks, supaya pembeli bisa menilai ukurannya.
 - Satu celana dipadu atasan berbeda untuk momen berbeda (kerja, jalan, malam).
 - Sumber: https://ecomdymedia.com/blog/5-high-converting-tiktok-creative-ideas-for-fashion-brands-in-2026
+
+## Revisi besar (5 Nov 2026) — setelah video jeans v1 dinilai 2/10
+Kritik Soom: tidak ada suara, tidak ada lagu, tidak menarik, kurang riset. **Video tanpa suara sama sekali tidak boleh dikirim lagi.**
+
+Riset (vidIQ outlier search, TikTok + Reels jeans pria, Okt 2026):
+- Video jeans yang meledak (1–5 juta views) hampir semua **voice-over + musik latar**, potongan cepat 1,5–2 detik, teks pemandu.
+- Hook yang menang di Indonesia: **POV relatable** ("pov: cowo nurut ganti celana ngetat" — 2,1 juta views, 40x median).
+- Format tanpa wajah yang menang: **"kalau kamu cari celana ini, namanya…"** + jajaran warna di latar polos krem.
+- CTA yang menang: **ajak komen** (komen nomor/kata kunci), bukan sekadar "link di bio".
+
+Pipeline yang sekarang dipakai (tools/render_v2.py + tools/mix_v2.py):
+- Voice-over AI bahasa Indonesia dari **vidIQ** (suara "Liam"), jeda dipadatkan ke ±0,15 dtk → ±20 dtk.
+- Subtitle kata-per-kata (kata aktif kuning), potongan adegan tepat di awal tiap frasa VO.
+- Latar dipotong (rembg) → jajaran 6 warna di latar krem; efek "celana ketat" (gambar dipipihkan) → "GANTI INI!".
+- SFX whoosh di setiap potongan. Musik latar royalty-free dari **vidIQ generate_music** di ±20% di bawah VO.
+- File audio dari vidIQ diunduh lewat workflow GitHub `fetch-media` (tulis `nama url` di media/fetch.txt lalu push).
+- TikTok: kirim versi VO saja + pasang lagu trending lewat Repliz `additionalInfo.music` (daftar trending Repliz sekarang sudah terisi).
+- Beri label konten AI (isAiGenerated) karena memakai suara AI.
