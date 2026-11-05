@@ -1,1 +1,2 @@
 music_dj.wav https://ai-music-tracks.s3.us-east-1.amazonaws.com/e1f917e8-8267-45ec-9489-b364712904cc/c5a6b517-a1ec-4af1-bf42-5412822b9299.wav
+vo_jeans.mp3 https://assets.vidiq.com/voiceovers/e1f917e8-8267-45ec-9489-b364712904cc/25c8ccf7-d442-47a1-be51-b386ecb93bdd.mp3
