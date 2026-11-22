@@ -1,24 +1,31 @@
-# run 1: bedah video ayam + uji suara + cari footage
+# run 2: suara narasi (edge-tts, per kalimat) + footage Mixkit
 set -x
-mkdir -p kerja/out
-cd kerja/out
-curl -sSfL -o ayam_asli.mp4 "https://assets.vidiq.com/compositions/e1f917e8-8267-45ec-9489-b364712904cc/pbgsq1gdxd3ad2ysk4p9zgar.mp4"
-curl -sSfL -o ayam_vo.mp3 "https://assets.vidiq.com/voiceovers/e1f917e8-8267-45ec-9489-b364712904cc/9f2347bd-ae61-48bc-b3c3-619a68abba24.mp3"
-pip install -q edge-tts faster-whisper
-edge-tts --list-voices | grep -i id-ID > voices.txt
-edge-tts --voice id-ID-ArdiNeural --rate=+10% --text "Telur cokelat lebih bergizi dari telur putih? Ternyata jawabannya bikin kaget." --write-media tes_ardi.mp3
-edge-tts --voice id-ID-GadisNeural --rate=+10% --text "Telur cokelat lebih bergizi dari telur putih? Ternyata jawabannya bikin kaget." --write-media tes_gadis.mp3
-python - <<'PY'
-from faster_whisper import WhisperModel
-m = WhisperModel("small", device="cpu", compute_type="int8")
-segs, _ = m.transcribe("ayam_vo.mp3", language="id")
-with open("transkrip.txt", "w") as f:
-    for s in segs:
-        f.write(f"{s.start:6.2f}-{s.end:6.2f} {s.text.strip()}\n")
-PY
-UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
-for q in chicken hen egg eggs rooster farm; do curl -sL -A "$UA" "https://mixkit.co/free-stock-video/$q/" -o mixkit_$q.html; done
-curl -sL -A "$UA" -o pexels_search.html -w "%{http_code}\n" "https://www.pexels.com/search/videos/chicken/" > pexels_code.txt
-curl -s "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=chicken%20filetype:video&srnamespace=6&format=json&srlimit=50" -o commons_chicken.json
-curl -s "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=egg%20filetype:video&srnamespace=6&format=json&srlimit=50" -o commons_egg.json
+mkdir -p kerja/ayam2
+cd kerja/ayam2
+pip install -q edge-tts
+i=0
+while IFS= read -r line; do
+  [ -z "$line" ] && continue
+  i=$((i+1)); n=$(printf "%02d" $i)
+  for v in id-ID-ArdiNeural; do
+    for try in 1 2 3 4; do
+      edge-tts --voice $v --rate=+8% --text "$line" --write-media vo_$n.mp3 && [ -s vo_$n.mp3 ] && break
+      sleep 5
+    done
+  done
+done <<'TXT'
+Telur cokelat lebih bergizi dari telur putih? Jawabannya ternyata bisa kamu tebak dari telinga ayamnya.
+Warna kulit telur ditentukan oleh jenis ayam yang bertelur.
+Pada dasarnya, semua cangkang telur berwarna putih, karena terbuat dari kalsium karbonat, alias kapur.
+Pada ayam petelur cokelat, beberapa jam sebelum telur keluar, cangkangnya dilapisi pigmen cokelat bernama protoporfirin.
+Lalu, apa hubungannya dengan telinga? Ayam yang cuping telinganya putih, biasanya bertelur putih.
+Sedangkan ayam yang cuping telinganya merah, biasanya bertelur cokelat. Tapi ingat, ini cuma petunjuk, bukan aturan pasti.
+Terus, mana yang lebih bergizi? Jawabannya, hampir sama persis.
+Yang menentukan gizi telur adalah pakan dan umur ayamnya, bukan warna cangkangnya.
+Lalu, kenapa di Indonesia telur cokelat paling banyak? Karena peternak kita kebanyakan memelihara ayam ras petelur cokelat.
+Sekarang kamu sudah tahu, kan? Tulis di komentar, fakta ayam apa lagi yang mau kamu ketahui!
+TXT
+for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108; do
+  curl -sSfL -o clip_$id.mp4 "https://assets.mixkit.co/videos/$id/$id-1080.mp4" || curl -sSfL -o clip_$id.mp4 "https://assets.mixkit.co/videos/$id/$id-720.mp4" || true
+done
 ls -la
