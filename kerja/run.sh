@@ -1,31 +1,12 @@
-# run 2: suara narasi (edge-tts, per kalimat) + footage Mixkit
+# run 3: cek resolusi lebih tinggi Mixkit + cari video vertikal
 set -x
-mkdir -p kerja/ayam2
-cd kerja/ayam2
-pip install -q edge-tts
-i=0
-while IFS= read -r line; do
-  [ -z "$line" ] && continue
-  i=$((i+1)); n=$(printf "%02d" $i)
-  for v in id-ID-ArdiNeural; do
-    for try in 1 2 3 4; do
-      edge-tts --voice $v --rate=+8% --text "$line" --write-media vo_$n.mp3 && [ -s vo_$n.mp3 ] && break
-      sleep 5
-    done
+mkdir -p kerja/ayam3 && cd kerja/ayam3
+for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107; do
+  for r in 2160 1080; do
+    c=$(curl -s -o /dev/null -w "%{http_code}" -I "https://assets.mixkit.co/videos/$id/$id-$r.mp4"); echo "$id $r $c" >> probe.txt
+    if [ "$c" = "200" ]; then curl -sSfL -o clip_${id}_$r.mp4 "https://assets.mixkit.co/videos/$id/$id-$r.mp4"; break; fi
   done
-done <<'TXT'
-Telur cokelat lebih bergizi dari telur putih? Jawabannya ternyata bisa kamu tebak dari telinga ayamnya.
-Warna kulit telur ditentukan oleh jenis ayam yang bertelur.
-Pada dasarnya, semua cangkang telur berwarna putih, karena terbuat dari kalsium karbonat, alias kapur.
-Pada ayam petelur cokelat, beberapa jam sebelum telur keluar, cangkangnya dilapisi pigmen cokelat bernama protoporfirin.
-Lalu, apa hubungannya dengan telinga? Ayam yang cuping telinganya putih, biasanya bertelur putih.
-Sedangkan ayam yang cuping telinganya merah, biasanya bertelur cokelat. Tapi ingat, ini cuma petunjuk, bukan aturan pasti.
-Terus, mana yang lebih bergizi? Jawabannya, hampir sama persis.
-Yang menentukan gizi telur adalah pakan dan umur ayamnya, bukan warna cangkangnya.
-Lalu, kenapa di Indonesia telur cokelat paling banyak? Karena peternak kita kebanyakan memelihara ayam ras petelur cokelat.
-Sekarang kamu sudah tahu, kan? Tulis di komentar, fakta ayam apa lagi yang mau kamu ketahui!
-TXT
-for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108; do
-  curl -sSfL -o clip_$id.mp4 "https://assets.mixkit.co/videos/$id/$id-1080.mp4" || curl -sSfL -o clip_$id.mp4 "https://assets.mixkit.co/videos/$id/$id-720.mp4" || true
 done
+UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
+for q in chicken egg hen rooster; do curl -sL -A "$UA" "https://mixkit.co/free-stock-video/vertical/?q=$q" -o vert_$q.html; curl -sL -A "$UA" "https://mixkit.co/free-stock-video/discover/$q/?orientation=vertical" -o vert2_$q.html; done
 ls -la
