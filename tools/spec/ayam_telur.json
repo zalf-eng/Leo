@@ -1,0 +1,172 @@
+{
+ "out": "videos/telur_cokelat_vs_putih.mp4",
+ "dir": "kerja/ayam2",
+ "gap": 0.3,
+ "scenes": [
+  {
+   "vo": "vo_01.mp3",
+   "head": "COKELAT vs PUTIH?",
+   "color": "orange",
+   "shots": [
+    {
+     "vsplit": [
+      "clip_46582.mp4",
+      "clip_17202.mp4"
+     ],
+     "ss": [
+      0.2,
+      6
+     ],
+     "fx": [
+      0.5,
+      0.5
+     ],
+     "labels": [
+      "COKELAT",
+      "PUTIH"
+     ]
+    }
+   ],
+   "box_y": 883
+  },
+  {
+   "vo": "vo_02.mp3",
+   "head": "Warna telur = jenis ayam",
+   "color": "white",
+   "shots": [
+    {
+     "clip": "clip_11225.mp4",
+     "ss": 3,
+     "fx": 0.3
+    }
+   ]
+  },
+  {
+   "vo": "vo_03.mp3",
+   "head": "Cangkang asli = PUTIH",
+   "color": "white",
+   "sub": "kalsium karbonat (kapur)",
+   "sub_at": 2.6,
+   "shots": [
+    {
+     "clip": "clip_17202.mp4",
+     "ss": 1,
+     "fx": 0.55
+    }
+   ]
+  },
+  {
+   "vo": "vo_04.mp3",
+   "head": "Pigmen cokelat: PROTOPORFIRIN",
+   "color": "orange",
+   "shots": [
+    {
+     "clip": "clip_45326.mp4",
+     "ss": 2,
+     "fx": 0.6
+    },
+    {
+     "clip": "clip_46582.mp4",
+     "ss": 3,
+     "fx": 0.5
+    }
+   ]
+  },
+  {
+   "vo": "vo_05.mp3",
+   "head": "Cuping putih = telur putih",
+   "color": "white",
+   "shots": [
+    {
+     "clip": "clip_14384.mp4",
+     "ss": 1,
+     "fx": 0.15
+    },
+    {
+     "clip": "clip_14384.mp4",
+     "ss": 8,
+     "fx": 0.3
+    }
+   ]
+  },
+  {
+   "vo": "vo_06.mp3",
+   "head": "Cuping merah = telur cokelat",
+   "color": "orange",
+   "sub": "*petunjuk, bukan aturan pasti",
+   "sub_at": 4.2,
+   "shots": [
+    {
+     "clip": "clip_49043.mp4",
+     "ss": 3,
+     "fx": 0.5
+    },
+    {
+     "clip": "clip_49044.mp4",
+     "ss": 4,
+     "fx": 0.55
+    }
+   ]
+  },
+  {
+   "vo": "vo_07.mp3",
+   "head": "GIZI = SAMA",
+   "color": "teal",
+   "shots": [
+    {
+     "clip": "clip_43011_2160.mp4",
+     "ss": 2,
+     "fx": 0.45
+    }
+   ]
+  },
+  {
+   "vo": "vo_08.mp3",
+   "head": "GIZI = SAMA",
+   "color": "teal",
+   "sub": "Yang menentukan: pakan & umur ayam",
+   "sub_at": 0.4,
+   "shots": [
+    {
+     "clip": "clip_47106.mp4",
+     "ss": 4,
+     "fx": 0.5
+    }
+   ]
+  },
+  {
+   "vo": "vo_09.mp3",
+   "head": "Di Indonesia: mayoritas telur cokelat",
+   "color": "white",
+   "shots": [
+    {
+     "clip": "clip_11225.mp4",
+     "ss": 10,
+     "fx": 0.75
+    },
+    {
+     "clip": "clip_45326.mp4",
+     "ss": 9,
+     "fx": 0.4
+    }
+   ]
+  },
+  {
+   "vo": "vo_10.mp3",
+   "head": "Fakta ayam apa lagi? Tulis di komentar!",
+   "color": "orange",
+   "shots": [
+    {
+     "clip": "clip_47368.mp4",
+     "ss": 3,
+     "fx": 0.45
+    },
+    {
+     "clip": "clip_45102.mp4",
+     "ss": 3,
+     "fx": 0.5
+    }
+   ]
+  }
+ ]
+}
