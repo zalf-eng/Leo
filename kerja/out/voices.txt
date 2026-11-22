@@ -1,0 +1,2 @@
+id-ID-ArdiNeural                  Male      General                Friendly, Positive
+id-ID-GadisNeural                 Female    General                Friendly, Positive
