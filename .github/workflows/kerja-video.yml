@@ -1,0 +1,27 @@
+name: kerja-video
+on:
+  push:
+    paths: ['kerja/run.sh']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: kerja-video
+jobs:
+  kerja:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Jalankan kerja/run.sh
+        run: bash kerja/run.sh 2>&1 | tee kerja/log.txt || true
+      - name: Commit hasil
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add kerja
+          git commit -m "Hasil kerja-video" || echo nothing
+          git pull --rebase || true
+          git push
