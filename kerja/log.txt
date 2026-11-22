@@ -1,257 +1,191 @@
-+ mkdir -p kerja/ayam2
-+ cd kerja/ayam2
-+ pip install -q edge-tts
-+ i=0
-+ IFS=
-+ read -r line
-+ '[' -z 'Telur cokelat lebih bergizi dari telur putih? Jawabannya ternyata bisa kamu tebak dari telinga ayamnya.' ']'
-+ i=1
-++ printf %02d 1
-+ n=01
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Telur cokelat lebih bergizi dari telur putih? Jawabannya ternyata bisa kamu tebak dari telinga ayamnya.' --write-media vo_01.mp3
-+ '[' -s vo_01.mp3 ']'
++ mkdir -p kerja/ayam3
++ cd kerja/ayam3
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/46582/46582-2160.mp4
++ c=403
++ echo '46582 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/46582/46582-1080.mp4
++ c=403
++ echo '46582 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/17202/17202-2160.mp4
++ c=403
++ echo '17202 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/17202/17202-1080.mp4
++ c=403
++ echo '17202 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/11225/11225-2160.mp4
++ c=403
++ echo '11225 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/11225/11225-1080.mp4
++ c=403
++ echo '11225 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47314/47314-2160.mp4
++ c=403
++ echo '47314 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47314/47314-1080.mp4
++ c=403
++ echo '47314 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/46052/46052-2160.mp4
++ c=403
++ echo '46052 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/46052/46052-1080.mp4
++ c=403
++ echo '46052 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/14384/14384-2160.mp4
++ c=403
++ echo '14384 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/14384/14384-1080.mp4
++ c=403
++ echo '14384 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/45543/45543-2160.mp4
++ c=403
++ echo '45543 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/45543/45543-1080.mp4
++ c=403
++ echo '45543 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/49043/49043-2160.mp4
++ c=403
++ echo '49043 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/49043/49043-1080.mp4
++ c=403
++ echo '49043 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/49044/49044-2160.mp4
++ c=403
++ echo '49044 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/49044/49044-1080.mp4
++ c=403
++ echo '49044 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/43011/43011-2160.mp4
++ c=200
++ echo '43011 2160 200'
++ '[' 200 = 200 ']'
++ curl -sSfL -o clip_43011_2160.mp4 https://assets.mixkit.co/videos/43011/43011-2160.mp4
 + break
-+ IFS=
-+ read -r line
-+ '[' -z 'Warna kulit telur ditentukan oleh jenis ayam yang bertelur.' ']'
-+ i=2
-++ printf %02d 2
-+ n=02
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Warna kulit telur ditentukan oleh jenis ayam yang bertelur.' --write-media vo_02.mp3
-+ '[' -s vo_02.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Pada dasarnya, semua cangkang telur berwarna putih, karena terbuat dari kalsium karbonat, alias kapur.' ']'
-+ i=3
-++ printf %02d 3
-+ n=03
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Pada dasarnya, semua cangkang telur berwarna putih, karena terbuat dari kalsium karbonat, alias kapur.' --write-media vo_03.mp3
-+ '[' -s vo_03.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Pada ayam petelur cokelat, beberapa jam sebelum telur keluar, cangkangnya dilapisi pigmen cokelat bernama protoporfirin.' ']'
-+ i=4
-++ printf %02d 4
-+ n=04
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Pada ayam petelur cokelat, beberapa jam sebelum telur keluar, cangkangnya dilapisi pigmen cokelat bernama protoporfirin.' --write-media vo_04.mp3
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/bin/edge-tts", line 6, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/edge_tts/util.py", line 184, in main
-    asyncio.run(amain())
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/asyncio/runners.py", line 190, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/asyncio/runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/edge_tts/util.py", line 179, in amain
-    await _run_tts(args)
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/edge_tts/util.py", line 95, in _run_tts
-    async for chunk in communicate.stream():
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/edge_tts/communicate.py", line 588, in stream
-    async for message in self.__stream():
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/edge_tts/communicate.py", line 562, in __stream
-    raise NoAudioReceived(
-edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct.
-+ sleep 5
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Pada ayam petelur cokelat, beberapa jam sebelum telur keluar, cangkangnya dilapisi pigmen cokelat bernama protoporfirin.' --write-media vo_04.mp3
-+ '[' -s vo_04.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Lalu, apa hubungannya dengan telinga? Ayam yang cuping telinganya putih, biasanya bertelur putih.' ']'
-+ i=5
-++ printf %02d 5
-+ n=05
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Lalu, apa hubungannya dengan telinga? Ayam yang cuping telinganya putih, biasanya bertelur putih.' --write-media vo_05.mp3
-+ '[' -s vo_05.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Sedangkan ayam yang cuping telinganya merah, biasanya bertelur cokelat. Tapi ingat, ini cuma petunjuk, bukan aturan pasti.' ']'
-+ i=6
-++ printf %02d 6
-+ n=06
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Sedangkan ayam yang cuping telinganya merah, biasanya bertelur cokelat. Tapi ingat, ini cuma petunjuk, bukan aturan pasti.' --write-media vo_06.mp3
-+ '[' -s vo_06.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Terus, mana yang lebih bergizi? Jawabannya, hampir sama persis.' ']'
-+ i=7
-++ printf %02d 7
-+ n=07
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Terus, mana yang lebih bergizi? Jawabannya, hampir sama persis.' --write-media vo_07.mp3
-+ '[' -s vo_07.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Yang menentukan gizi telur adalah pakan dan umur ayamnya, bukan warna cangkangnya.' ']'
-+ i=8
-++ printf %02d 8
-+ n=08
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Yang menentukan gizi telur adalah pakan dan umur ayamnya, bukan warna cangkangnya.' --write-media vo_08.mp3
-+ '[' -s vo_08.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Lalu, kenapa di Indonesia telur cokelat paling banyak? Karena peternak kita kebanyakan memelihara ayam ras petelur cokelat.' ']'
-+ i=9
-++ printf %02d 9
-+ n=09
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Lalu, kenapa di Indonesia telur cokelat paling banyak? Karena peternak kita kebanyakan memelihara ayam ras petelur cokelat.' --write-media vo_09.mp3
-+ '[' -s vo_09.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ '[' -z 'Sekarang kamu sudah tahu, kan? Tulis di komentar, fakta ayam apa lagi yang mau kamu ketahui!' ']'
-+ i=10
-++ printf %02d 10
-+ n=10
-+ for v in id-ID-ArdiNeural
-+ for try in 1 2 3 4
-+ edge-tts --voice id-ID-ArdiNeural --rate=+8% --text 'Sekarang kamu sudah tahu, kan? Tulis di komentar, fakta ayam apa lagi yang mau kamu ketahui!' --write-media vo_10.mp3
-+ '[' -s vo_10.mp3 ']'
-+ break
-+ IFS=
-+ read -r line
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_3795.mp4 https://assets.mixkit.co/videos/3795/3795-1080.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_17202.mp4 https://assets.mixkit.co/videos/17202/17202-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_17202.mp4 https://assets.mixkit.co/videos/17202/17202-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_43011.mp4 https://assets.mixkit.co/videos/43011/43011-1080.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_46582.mp4 https://assets.mixkit.co/videos/46582/46582-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_46582.mp4 https://assets.mixkit.co/videos/46582/46582-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_45326.mp4 https://assets.mixkit.co/videos/45326/45326-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_45326.mp4 https://assets.mixkit.co/videos/45326/45326-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_47368.mp4 https://assets.mixkit.co/videos/47368/47368-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_47368.mp4 https://assets.mixkit.co/videos/47368/47368-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_47314.mp4 https://assets.mixkit.co/videos/47314/47314-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_47314.mp4 https://assets.mixkit.co/videos/47314/47314-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_46052.mp4 https://assets.mixkit.co/videos/46052/46052-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_46052.mp4 https://assets.mixkit.co/videos/46052/46052-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_46054.mp4 https://assets.mixkit.co/videos/46054/46054-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_46054.mp4 https://assets.mixkit.co/videos/46054/46054-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_49044.mp4 https://assets.mixkit.co/videos/49044/49044-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_49044.mp4 https://assets.mixkit.co/videos/49044/49044-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_49043.mp4 https://assets.mixkit.co/videos/49043/49043-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_49043.mp4 https://assets.mixkit.co/videos/49043/49043-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_45543.mp4 https://assets.mixkit.co/videos/45543/45543-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_45543.mp4 https://assets.mixkit.co/videos/45543/45543-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_47106.mp4 https://assets.mixkit.co/videos/47106/47106-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_47106.mp4 https://assets.mixkit.co/videos/47106/47106-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_47107.mp4 https://assets.mixkit.co/videos/47107/47107-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_47107.mp4 https://assets.mixkit.co/videos/47107/47107-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_45542.mp4 https://assets.mixkit.co/videos/45542/45542-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_45542.mp4 https://assets.mixkit.co/videos/45542/45542-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_45102.mp4 https://assets.mixkit.co/videos/45102/45102-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_45102.mp4 https://assets.mixkit.co/videos/45102/45102-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_42906.mp4 https://assets.mixkit.co/videos/42906/42906-1080.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_101157.mp4 https://assets.mixkit.co/videos/101157/101157-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_101157.mp4 https://assets.mixkit.co/videos/101157/101157-720.mp4
-curl: (22) The requested URL returned error: 403
-+ true
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_14384.mp4 https://assets.mixkit.co/videos/14384/14384-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_14384.mp4 https://assets.mixkit.co/videos/14384/14384-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_11225.mp4 https://assets.mixkit.co/videos/11225/11225-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_11225.mp4 https://assets.mixkit.co/videos/11225/11225-720.mp4
-+ for id in 3795 17202 43011 46582 45326 47368 47314 46052 46054 49044 49043 45543 47106 47107 45542 45102 42906 101157 14384 11225 47108
-+ curl -sSfL -o clip_47108.mp4 https://assets.mixkit.co/videos/47108/47108-1080.mp4
-curl: (22) The requested URL returned error: 403
-+ curl -sSfL -o clip_47108.mp4 https://assets.mixkit.co/videos/47108/47108-720.mp4
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47106/47106-2160.mp4
++ c=403
++ echo '47106 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47106/47106-1080.mp4
++ c=403
++ echo '47106 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/45326/45326-2160.mp4
++ c=403
++ echo '45326 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/45326/45326-1080.mp4
++ c=403
++ echo '45326 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47368/47368-2160.mp4
++ c=403
++ echo '47368 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47368/47368-1080.mp4
++ c=403
++ echo '47368 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/45102/45102-2160.mp4
++ c=403
++ echo '45102 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/45102/45102-1080.mp4
++ c=403
++ echo '45102 1080 403'
++ '[' 403 = 200 ']'
++ for id in 46582 17202 11225 47314 46052 14384 45543 49043 49044 43011 47106 45326 47368 45102 47107
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47107/47107-2160.mp4
++ c=403
++ echo '47107 2160 403'
++ '[' 403 = 200 ']'
++ for r in 2160 1080
+++ curl -s -o /dev/null -w '%{http_code}' -I https://assets.mixkit.co/videos/47107/47107-1080.mp4
++ c=403
++ echo '47107 1080 403'
++ '[' 403 = 200 ']'
++ UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
++ for q in chicken egg hen rooster
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/vertical/?q=chicken' -o vert_chicken.html
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/discover/chicken/?orientation=vertical' -o vert2_chicken.html
++ for q in chicken egg hen rooster
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/vertical/?q=egg' -o vert_egg.html
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/discover/egg/?orientation=vertical' -o vert2_egg.html
++ for q in chicken egg hen rooster
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/vertical/?q=hen' -o vert_hen.html
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/discover/hen/?orientation=vertical' -o vert2_hen.html
++ for q in chicken egg hen rooster
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/vertical/?q=rooster' -o vert_rooster.html
++ curl -sL -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36' 'https://mixkit.co/free-stock-video/discover/rooster/?orientation=vertical' -o vert2_rooster.html
 + ls -la
-total 186496
-drwxr-xr-x 2 runner runner     4096 Nov 22 11:48 .
-drwxr-xr-x 4 runner runner     4096 Nov 22 11:47 ..
--rw-r--r-- 1 runner runner  6074664 Nov 22 11:48 clip_11225.mp4
--rw-r--r-- 1 runner runner  5853097 Nov 22 11:48 clip_14384.mp4
--rw-r--r-- 1 runner runner  6981000 Nov 22 11:48 clip_17202.mp4
--rw-r--r-- 1 runner runner 44247674 Nov 22 11:48 clip_3795.mp4
--rw-r--r-- 1 runner runner 25405001 Nov 22 11:48 clip_42906.mp4
--rw-r--r-- 1 runner runner 30152038 Nov 22 11:48 clip_43011.mp4
--rw-r--r-- 1 runner runner  4648799 Nov 22 11:48 clip_45102.mp4
--rw-r--r-- 1 runner runner  4707239 Nov 22 11:48 clip_45326.mp4
--rw-r--r-- 1 runner runner  1566902 Nov 22 11:48 clip_45542.mp4
--rw-r--r-- 1 runner runner  3089446 Nov 22 11:48 clip_45543.mp4
--rw-r--r-- 1 runner runner  4172654 Nov 22 11:48 clip_46052.mp4
--rw-r--r-- 1 runner runner  3565844 Nov 22 11:48 clip_46054.mp4
--rw-r--r-- 1 runner runner  9845473 Nov 22 11:48 clip_46582.mp4
--rw-r--r-- 1 runner runner  6760338 Nov 22 11:48 clip_47106.mp4
--rw-r--r-- 1 runner runner  4886321 Nov 22 11:48 clip_47107.mp4
--rw-r--r-- 1 runner runner  6532626 Nov 22 11:48 clip_47108.mp4
--rw-r--r-- 1 runner runner  6461504 Nov 22 11:48 clip_47314.mp4
--rw-r--r-- 1 runner runner  6546816 Nov 22 11:48 clip_47368.mp4
--rw-r--r-- 1 runner runner  4111720 Nov 22 11:48 clip_49043.mp4
--rw-r--r-- 1 runner runner  4912580 Nov 22 11:48 clip_49044.mp4
--rw-r--r-- 1 runner runner    38880 Nov 22 11:47 vo_01.mp3
--rw-r--r-- 1 runner runner    21456 Nov 22 11:47 vo_02.mp3
--rw-r--r-- 1 runner runner    39456 Nov 22 11:47 vo_03.mp3
--rw-r--r-- 1 runner runner    41040 Nov 22 11:47 vo_04.mp3
--rw-r--r-- 1 runner runner    41184 Nov 22 11:48 vo_05.mp3
--rw-r--r-- 1 runner runner    49248 Nov 22 11:48 vo_06.mp3
--rw-r--r-- 1 runner runner    33264 Nov 22 11:48 vo_07.mp3
--rw-r--r-- 1 runner runner    29520 Nov 22 11:48 vo_08.mp3
--rw-r--r-- 1 runner runner    44064 Nov 22 11:48 vo_09.mp3
--rw-r--r-- 1 runner runner    38880 Nov 22 11:48 vo_10.mp3
+total 42220
+drwxr-xr-x 2 runner runner     4096 Nov 22 11:50 .
+drwxr-xr-x 5 runner runner     4096 Nov 22 11:50 ..
+-rw-r--r-- 1 runner runner 42075926 Nov 22 11:50 clip_43011_2160.mp4
+-rw-r--r-- 1 runner runner      435 Nov 22 11:50 probe.txt
+-rw-r--r-- 1 runner runner   106020 Nov 22 11:50 vert2_chicken.html
+-rw-r--r-- 1 runner runner   174665 Nov 22 11:50 vert2_egg.html
+-rw-r--r-- 1 runner runner    75761 Nov 22 11:50 vert2_hen.html
+-rw-r--r-- 1 runner runner    75793 Nov 22 11:50 vert2_rooster.html
+-rw-r--r-- 1 runner runner   175193 Nov 22 11:50 vert_chicken.html
+-rw-r--r-- 1 runner runner   175193 Nov 22 11:50 vert_egg.html
+-rw-r--r-- 1 runner runner   175193 Nov 22 11:50 vert_hen.html
+-rw-r--r-- 1 runner runner   175193 Nov 22 11:50 vert_rooster.html
